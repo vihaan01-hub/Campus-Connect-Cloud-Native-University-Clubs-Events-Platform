@@ -1,88 +1,109 @@
-# Campus-Connect-Cloud-Native-University-Clubs-Events-Platform
-A modern, cloud-native web application for managing university clubs and events. Built with a serverless architecture, it enables students to discover clubs, register for events, and stay engaged through real-time updates and analytics.
+# Campus-Connect:-Cloud-Native-University-Clubs-Events-Platform🌐🎓
 
-Features
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Frontend](https://img.shields.io/badge/Frontend-React-blue)
+![Backend](https://img.shields.io/badge/Backend-Serverless-orange)
+![Database](https://img.shields.io/badge/Database-Firestore-green)
 
-Browse and filter clubs by category (Sports, Cultural, Tech, etc.).
+---
 
-User authentication with email and Google login.
+## Project Overview
+**Campus-Connect** 🌐is a cloud-native web application that helps students discover, join, and engage with university clubs and events. It features real-time communication, event registration, push notifications, and analytics dashboards—all built with a scalable serverless architecture.
 
-Event creation, registration, and management.
+---
 
-Upload and display club and event images.
+## Features
+- Browse and filter clubs by category (Sports, Cultural, Tech, etc.)
+- User authentication (email + Google login)
+- Event creation, registration, and management
+- Upload and display club/event images
+- Realtime chat & announcements within clubs
+- Recommendation system suggesting clubs/events based on interests
+- Analytics dashboard for club growth, event participation, and member activity
+- Push notifications for upcoming events and updates
 
-Realtime chat and announcements within clubs.
+---
 
-Lightweight recommendation system suggesting clubs/events based on interests and participation.
+## Tech Stack
+| Layer            | Technology                         |
+|-----------------|-----------------------------------|
+| Frontend         | React, HTML5, CSS3, JavaScript    |
+| Backend          | Firebase Functions / AWS Lambda   |
+| Database         | Firestore / DynamoDB              |
+| Storage          | Firebase Storage / AWS S3         |
+| Authentication   | Firebase Auth / AWS Cognito       |
+| Realtime & Chat  | Firestore listeners / AppSync     |
+| Notifications    | Firebase Cloud Messaging / SNS    |
+| Analytics        | Recharts / QuickSight             |
+| Hosting          | Firebase Hosting / AWS S3+CloudFront |
 
-Analytics dashboard for club growth, event participation, and member activity.
+---
 
-Push notifications for upcoming events and club updates.
 
-Project Structure
+- `frontend_react/`  
+  &nbsp;&nbsp;├─ React frontend for UI and user interaction
+- `backend_functions/`  
+  &nbsp;&nbsp;├─ Serverless APIs (Firebase Functions / AWS Lambda)
+- `database/`  
+  &nbsp;&nbsp;├─ Firestore / DynamoDB schemas and queries
+- `storage/`  
+  &nbsp;&nbsp;├─ Media files for events and clubs
+- `docs/`  
+  &nbsp;&nbsp;├─ Documentation, architecture diagrams, and reports
+- `tests/`  
+  &nbsp;&nbsp;├─ Unit and integration tests
 
-The project is organized into the following directories:
+---
 
-frontend_react: React frontend for UI and user interaction.
+## Screenshots
+![Homepage](docs/screenshots/homepage.png)
+![Club Page](docs/screenshots/club_page.png)
+![Analytics Dashboard](docs/screenshots/analytics_dashboard.png)
 
-backend_functions: Serverless APIs implemented using Firebase Functions / AWS Lambda.
+---
 
-database: Firestore / DynamoDB schemas and queries.
+## Setup Instructions
 
-storage: Cloud storage for event posters and media files.
+### Prerequisites
+- Node.js and npm
+- Firebase CLI or AWS CLI configured
 
-docs: Documentation, architecture diagrams, and reports.
-
-tests: Unit tests and integration tests for frontend, backend, and database.
-
-Setup Instructions
-Prerequisites
-
-Node.js and npm installed.
-
-Python 3.x (optional for scripts).
-
-Firebase CLI / AWS CLI configured for deployment.
-
-Frontend Setup
-
-Navigate to the frontend_react directory.
-
-Install dependencies:
-
+### Frontend
+```bash
+cd frontend_react
 npm install
-
-
-Run the development server:
-
 npm start
+```
 
-Backend & Database Setup
+### Backend & Database Setup
+ #### Configure Credentials
+ Before deploying, make sure your Firebase or AWS CLI is configured with the correct credentials.
 
-Configure Firebase / AWS credentials.
+ #### Deploy Serverless Functions
 
-Deploy serverless functions:
-
+**Firebase Functions:**
+```bash
 firebase deploy --only functions
+```
+---
 
 
-or for AWS Lambda:
-
-sam deploy
-
-Testing
-
-Run frontend tests:
-
+## Testing
+ ### Frontend
+```
 npm test
+```
+ ### Backend (from tests directory)
+```
+cd tests
+```
 
 
-Run backend tests from tests directory.
+---
 
-Contribution
+## Contribution
+ Contributions are welcome! Please fork the repository and submit a pull request for improvements or bug fixes.
 
-Contributions are welcome! Please fork the repository and submit a pull request for enhancements or bug fixes.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+---
+## License
+ This project is licensed under the MIT License. See the LICENSE file for details.
