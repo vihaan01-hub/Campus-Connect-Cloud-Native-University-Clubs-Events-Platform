@@ -40,17 +40,17 @@
 ---
 
 
-- `frontend_react/`  
+- `Frontend`  
   &nbsp;&nbsp;├─ React frontend for UI and user interaction
-- `backend_functions/`  
+- `Backend/`  
   &nbsp;&nbsp;├─ Serverless APIs (Firebase Functions / AWS Lambda)
-- `database/`  
+- `Database/`  
   &nbsp;&nbsp;├─ Firestore / DynamoDB schemas and queries
-- `storage/`  
+- `Storage/`  
   &nbsp;&nbsp;├─ Media files for events and clubs
-- `docs/`  
+- `Docs/`  
   &nbsp;&nbsp;├─ Documentation, architecture diagrams, and reports
-- `tests/`  
+- `Tests/`  
   &nbsp;&nbsp;├─ Unit and integration tests
 
 ---
